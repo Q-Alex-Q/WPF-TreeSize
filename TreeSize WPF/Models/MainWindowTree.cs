@@ -10,12 +10,12 @@ namespace TreeSize_WPF.Models
     public class MainWindowTree
     {
         public string Name { get; set; }
-        public long Size { get; set; }
+        public decimal Size { get; set; }
         public long FreeSpace { get; set; }
         public int Files { get; set; }
         public int Folders { get; set; }
         public DateTime LastModified { get; set; }
 
-        public ObservableCollection<MainWindowTree> SubTrees { get; set; }
+        public List<MainWindowTree> SubTrees { get; set; }
     }
 }
