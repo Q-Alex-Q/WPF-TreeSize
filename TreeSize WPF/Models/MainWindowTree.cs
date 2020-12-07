@@ -16,6 +16,6 @@ namespace TreeSize_WPF.Models
         public int Folders { get; set; }
         public DateTime LastModified { get; set; }
 
-        public List<MainWindowTree> SubTrees { get; set; }
+        public List<MainWindowTree> SubTrees { get; set; } = new List<MainWindowTree>();
     }
 }

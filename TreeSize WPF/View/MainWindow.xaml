@@ -25,8 +25,8 @@
         </DataGrid>
 
         <DataGrid x:Name="GreedTreeView" AutoGenerateColumns="False" Grid.Row="0" Grid.Column="1">
-
-            <DataGrid.Columns>
+            
+            <!--<DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding Path=Name}" Header="Name" IsReadOnly="True" Width="Auto"/>
                 <DataGridTextColumn Binding="{Binding Path=Size}" Header="Size" IsReadOnly="True" Width="Auto"/>
                 <DataGridTextColumn Binding="{Binding Path=FreeSpace}" Header="Free space" IsReadOnly="True" Width="Auto"/>
@@ -34,13 +34,18 @@
                 <DataGridTextColumn Binding="{Binding Path=Folders}" Header="Folders" IsReadOnly="True" Width="Auto"/>
                 <DataGridTextColumn Binding="{Binding Path=folders}" Header="% of Parent (Allocated)" IsReadOnly="True" Width="Auto"/>
                 <DataGridTextColumn Binding="{Binding Path=LastModified}" Header="Last Modified" IsReadOnly="True" Width="Auto"/>
-            </DataGrid.Columns>
-            
-        </DataGrid>
 
+            </DataGrid.Columns>-->
+
+
+        </DataGrid>
+        
+        <Button x:Name="Pusk" Width="200" Height="100" Background="Aqua" Content="ЖМИ" Click="Pusk_Click">
+
+        </Button>
 
         <TreeView x:Name="WindowTreeView" Grid.Row="1" Grid.Column="0" MinWidth="100" ScrollViewer.CanContentScroll="True">
-
+            
             <TreeView.ItemTemplate>
                 <HierarchicalDataTemplate ItemsSource="{Binding Path=SubTrees}">
                     <TextBlock>
@@ -50,6 +55,7 @@
                     </TextBlock>
                 </HierarchicalDataTemplate>
             </TreeView.ItemTemplate>
+            
         </TreeView>
         
     </Grid>
